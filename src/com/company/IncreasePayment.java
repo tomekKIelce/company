@@ -10,6 +10,7 @@ public class IncreasePayment {
     Scanner read = new Scanner(System.in);
     void increasePayment(){
         try {
+            System.out.println("jebac ");
             PreparedStatement prst = conn.con.prepareStatement("UPDATE pracownicy SET payment*0.10");
             prst.execute();
             prst.close();
